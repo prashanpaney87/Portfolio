@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import profile from "./assets/avatar.png";
 import "./App.css";
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
         email: "mailto:prashantpandey@example.com",
         linkedin: "https://www.linkedin.com/in/",
         github: "https://github.com/",
-        resume: "/resume.pdf",
+        resume: "/Portfolio/resume.pdf",
       },
     }),
     []
@@ -27,7 +28,6 @@ export default function App() {
       { id: "skills", label: "Skills" },
       { id: "experience", label: "Experience" },
       { id: "projects", label: "Projects" },
-      { id: "achievements", label: "Achievements" },
       { id: "education", label: "Education" },
       { id: "contact", label: "Contact" },
     ],
@@ -74,16 +74,17 @@ export default function App() {
   const PROJECTS = useMemo(
     () => [
       {
-        title: "Web Application Development",
+        title: "Data Migration Platform",
         links: [],
         bullets: [
-          "Developed dynamic and responsive UI components using ReactJS and modern practices like React Hooks.",
-          "Integrated REST APIs using fetch and Axios, handling JSON responses and state updates.",
-          "Implemented React Router for multi‑page navigation and protected routes.",
-          "Improved application performance through lazy loading and memoization to minimize re‑renders.",
-          "Utilized HTML5, CSS3, Bootstrap, and Material‑UI to design clean and intuitive UI layouts.",
+          "Developed frontend components for a data migration platform used to transfer data from multiple databases to Google BigQuery.",
+          "Built responsive UI using React.js to allow users to configure and monitor migration jobs.",
+          "Integrated frontend with backend services using REST APIs to fetch migration status and job details.",
+          "Implemented reusable components to display database sources, migration progress, and logs.",
+          "Improved user experience by creating dynamic forms for selecting source databases and migration parameters.",
+          "Collaborated with backend and data engineering teams to ensure smooth data pipeline monitoring.",
         ],
-        tags: ["ReactJS", "JavaScript", "React Router", "Material‑UI"],
+        tags: ["React.js", "JavaScript", "HTML", "CSS", "REST APIs"],
       },
       {
         title: "Power BI Reporting & Analytics Dashboard",
@@ -104,14 +105,6 @@ export default function App() {
         ],
         tags: ["SQL", "GCP", "BigQuery", "ETL", "Data Validation"],
       },
-    ],
-    []
-  );
-
-  const ACHIEVEMENTS = useMemo(
-    () => [
-      { title: "Power BI dashboard adoption", meta: "Improved reporting usability" },
-      { title: "Query performance improvements", meta: "Reduced execution time on key reports" },
     ],
     []
   );
@@ -325,7 +318,7 @@ export default function App() {
             </div>
 
             <div className="hero-photo">
-              <img className="avatar" src="/Portfolio/profile.png" alt={`${PROFILE.name} portrait`} />
+              <img className="avatar" src={profile} alt={`${PROFILE.name} portrait`} />
             </div>
           </div>
         </section>
@@ -420,21 +413,6 @@ export default function App() {
                     </span>
                   ))}
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="achievements" className="section">
-          <div className="section-head">
-            <h2 className="section-title">🏅 Achievements</h2>
-          </div>
-
-          <div className="stack">
-            {ACHIEVEMENTS.map((a) => (
-              <div className="row" key={a.title}>
-                <div className="row-title">{a.title}</div>
-                <div className="row-meta">{a.meta}</div>
               </div>
             ))}
           </div>
