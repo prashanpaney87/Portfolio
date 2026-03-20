@@ -6,16 +6,16 @@ export default function App() {
   const PROFILE = useMemo(
     () => ({
       name: "Prashant Pandey",
-      headline: "Senior Project Engineer | ReactJS • SQL • Data Operations",
+      headline: "Frontend Engineer | ReactJS • JavaScript • Web Development",
       summary:
-        "I am Prashant Pandey, a Senior Project Engineer with over 4 years of experience in ReactJS and SQL. My expertise includes data operations, database management, and developing interactive web applications. I have hands-on experience in solving complex technical problems and contributing to end-to-end development and data-driven projects.",
+        "I am Prashant Pandey, a Frontend Engineer with over 4 years of experience in ReactJS and JavaScript. My expertise includes building responsive user interfaces, creating reusable components, and developing interactive web applications. I have hands-on experience solving complex technical problems and delivering scalable frontend solutions.",
       location: "Greater Noida, India",
       experience: "4+ years experience",
-      highlights: ["ReactJS", "SQL", "Data Operations"],
+      highlights: ["ReactJS", "JavaScript", "Web Development"],
       links: {
-        email: "mailto:prashant.pandeyl6@wipro.com",
+        email: "mailto:prashantpandey4650@gmail.com.com",
         linkedin: "https://linkedin.com/in/prashantpandey87",
-        github: "https://github.com/prashanpaney87",
+        github: "https://github.com/prashantpandey87",
         resume: "https://drive.google.com/file/d/1rpPaTal8z7S-erIRULU6n77tw4i2Vu9n/view?usp=sharing",
       },
     }),
@@ -63,15 +63,15 @@ export default function App() {
   const EXPERIENCE = useMemo(
     () => [
       {
-        role: "Sr. Project Engineer",
+        role: "Frontend Engineer",
         company: "Wipro Limited",
         meta: "2021 – Present",
-        tags: ["React", "SQL"],
+        tags: ["React", "JavaScript"],
         bullets: [
-          "Working as a Senior Project Engineer, contributing to application development and data analytics initiatives.",
-          "Responsible for optimizing SQL queries, handling large-scale data operations, and developing interactive web applications using ReactJS.",
-          "Collaborated with cross‑functional teams across end‑to‑end development, database management, and technical problem‑solving while maintaining high performance and data integrity.",
-          "Continuously learning and implementing new technologies to improve development efficiency and analytical capabilities.",
+          "Working as a Frontend Engineer, contributing to modern web application development and user experience improvements.",
+          "Responsible for building interactive, responsive, and accessible web interfaces using ReactJS and JavaScript.",
+          "Collaborated with cross-functional teams to deliver end-to-end frontend features, improve UI performance, and ensure clean component architecture.",
+          "Continuously learning and implementing frontend best practices to improve development speed, maintainability, and user satisfaction.",
         ],
       },
     ],
@@ -442,7 +442,7 @@ export default function App() {
           <div className="card contact-card">
             <h3 className="card-title">Let’s build together</h3>
             <p className="muted">
-              Open to React + data roles, dashboarding, and building clean internal tools.
+              Open to frontend roles focused on React, modern JavaScript, and building clean, user-friendly web applications.
             </p>
             <div className="cta-row">
               <a className="cta" href={PROFILE.links.email}>
