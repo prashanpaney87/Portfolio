@@ -16,7 +16,7 @@ export default function App() {
         email: "mailto:prashant.pandeyl6@wipro.com",
         linkedin: "https://linkedin.com/in/prashantpandey87",
         github: "https://github.com/prashanpaney87",
-        resume: "/resume.html",
+        resume: "portfolio/resume.html",
       },
     }),
     []
